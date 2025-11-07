@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Convite de Aniversário 🎉</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(#DA70D6);
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 40px;
+      max-width: 800px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      animation: fadeIn 1s ease-in-out;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h1 {
+      color: #f9d47c;
+      margin-bottom: 10px;
+      font-size: 2.2em;
+    }
+
+    p {
+      font-size: 17px;
+      margin: 15px 0;
+      line-height: 1.6;
+    }
+
+    .info {
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 12px;
+      padding: 15px;
+      margin-top: 25px;
+      font-size: 16px;
+      text-align: left;
+    }
+
+    iframe {
+      margin-top: 15px;
+      border-radius: 15px;
+      width: 100%;
+      height: 450px;
+      border: none;
+    }
+
+    form {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      width: 100%;
+    }
+
+    .form-group {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      align-items: center;
+    }
+
+    input,
+    select,
+    button {
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+      width: 48%;
+    }
+
+    input,
+    select {
+      background: rgba(255, 255, 255, 0.9);
+      color: #333;
+    }
+
+    button {
+      background-color: #2ecc71;
+      color: white;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      letter-spacing: 0.5px;
+    }
+
+    button:hover {
+      background-color: #27ae60;
+      transform: scale(1.03);
+    }
+
+    .footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .emoji {
+      font-size: 22px;
+    }
+
+    .pulsar {
+      font-size: 20px;
+      font-weight: 600;
+      text-align: center;
+      animation: pulsar 2s infinite ease-in-out;
+      color: #f9d47c;
+    }
+
+    @keyframes pulsar {
+      0% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.15);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    .map-card {
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 15px;
+      padding: 20px;
+      margin-top: 30px;
+      max-width: 800px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    .map-card iframe {
+      border-radius: 15px;
+    }
+
+    .map-link {
+      display: inline-block;
+      background-color: #ff8c00;
+      color: white;
+      padding: 12px 30px;
+      text-decoration: none;
+      border-radius: 50px;
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: uppercase;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      animation: pulse 2s infinite;
+    }
+
+    .map-link:hover {
+      background-color: #e07b00;
+      transform: scale(1.1);
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.1);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    /* Estilo para o botão "X" */
+    .remove-button {
+      background: none;
+      color: red;
+      font-size: 18px;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <h1>🎈 Você está convidado(a)! 🎉</h1>
+
+    <p>🎉 Convite Especial para o Meu 50º Aniversário! 🎉 </p>
+
+    <p>Ei, pessoal! No dia 06 de dezembro vou comemorar 50 anos de vida e nada melhor do que uma festa com tema de retrospectiva das décadas de 60, 70, 80 e 90 para relembrarmos os melhores momentos dessa jornada! 🥳</p>
+
+    <p>A comemoração vai acontecer às 16:00 na Chácara Oliveira, um lugar perfeito para curtirmos essa vibe nostálgica e celebrarmos muitos anos de histórias e boas memórias. 🌳✨</p>
+
+    <p>A ideia é viajar no tempo e reviver os sucessos das nossas melhores décadas! Vai ter muito hits dos anos 60, 70, 80 e 90 😎🎶 E, como boa festa de aniversário, não vai faltar comida boa e a melhor companhia — afinal, quem faz parte da minha vida merece estar ao meu lado nesse momento tão especial! 🎈</p>
+
+    <p>Conto com vocês para deixar esse dia ainda mais inesquecível! Não vejo a hora de curtir essa retrospectiva com todos! 💫</p>
+
+    <p>E não se esqueçam: confirme sua presença e vamos juntos fazer essa festa inesquecível!</p>
+
+    <div class="info">
+      <p><strong>📅 Data:</strong> 06 de Dezembro de 2025, 16:00 horas</p>
+      <p><strong>📍 Local:</strong> Chácara Oliveira </p>
+      <p><strong>📍 Endereço:</strong> Estr. dos Engenheiros, 150, Alumínio - SP, 18125-000</p>
+
+      <!-- Link para o Google Maps com o endereço correto -->
+      <a href="https://maps.app.goo.gl/6AV3o8vmxUL1og5T6" class="map-link" target="_blank">Ver no Google Maps</a>
+    </div>
+
+    <!-- Imagem do mapa -->
+    <img src="https://via.placeholder.com/800x400?text=Mapa+do+Local" alt="Mapa do Local" style="width: 100%; border-radius: 15px; margin-top: 20px;">
+
+    <!-- Observação -->
+    <p style="font-size: 14px; color: #fff; margin-top: 10px;">
+      <strong>Observação:</strong> Por favor, confirme sua presença antes do dia 01 de dezembro para melhor organização do evento.
+    </p>
+
+    <p class="pulsar">Não esqueçam de confirmar presença para organizarmos a reserva 🥳.</p>
+
+    <form id="rsvpForm">
+      <div class="form-group">
+        <div>
+          <label for="nome">Seu nome completo:</label>
+          <input type="text" id="nome" placeholder="Nome completo" required minlength="5">
+        </div>
+      </div>
+
+      <div id="pessoasAdicionais"></div>
+
+      <button type="button" id="adicionarPessoa">Adicionar mais pessoas</button>
+      <button type="submit">💬 Confirmar presença via WhatsApp</button>
+    </form>
+
+    <div class="footer">© 2025 — Vamos para festa da Gigi 🥳 </div>
+  </div>
+
+  <script>
+    document.getElementById("rsvpForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const nome = document.getElementById("nome").value;
+      const quantidade = document.querySelectorAll(".pessoa").length + 1;  // Inclui a pessoa principal
+      const numeroWhatsApp = "5515996936020";
+
+      let mensagem = `Olá! Confirmo minha presença no aniversário 🥳 Estaremos em ${quantidade} pessoa(s):\n- ${nome}`;
+
+      // Adiciona as pessoas adicionais
+      const pessoas = document.querySelectorAll(".pessoa");
+      pessoas.forEach(pessoa => {
+        const nomeAdicional = pessoa.querySelector(".nome").value;
+        mensagem += `\n- ${nomeAdicional}`;
+      });
+
+      const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`;
+      window.open(url, "_blank");
+    });
+
+    document.getElementById("adicionarPessoa").addEventListener("click", function () {
+      const div = document.createElement("div");
+      div.classList.add("form-group", "pessoa");  // Garantir que a nova pessoa fique alinhada
+
+      div.innerHTML = `
+        <div>
+          <label for="nome">Nome completo:</label>
+          <input type="text" class="nome" placeholder="Nome completo" required minlength="5">
+        </div>
+        <button type="button" class="remove-button">X</button>
+      `;
+
+      // Adiciona o botão de remoção
+      const removeButton = div.querySelector(".remove-button");
+      removeButton.addEventListener("click", function () {
+        div.remove();  // Remove o campo da pessoa
+      });
+
+      document.getElementById("pessoasAdicionais").appendChild(div);
+    });
+  </script>
+</body>
+
+</html>
